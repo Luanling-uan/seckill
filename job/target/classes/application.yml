@@ -12,13 +12,13 @@ spring:
 xxl:
   job:
     admin:
-      addresses: http://localhost:8080/xxl-job-admin
+      addresses: http://localhost:8089/xxl-job-admin
     executor:
       appname: job-service
-#      address: 'http://localhost:8084'
+      address: 'http://localhost:8084'
       log-path: '/data/applogs/xxl-job/jobhandler'
       logretentiondays: 30
-      ip: '127.0.0.1'
+      ip: '0.0.0.0'
       port: 9999
     accessToken: '4221ac56ab466a4efb7b556dc1556b9d'
 

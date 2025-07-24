@@ -12,7 +12,7 @@ spring:
 xxl:
   job:
     admin:
-      addresses: http://localhost:8080/xxl-job-admin
+      addresses: http://localhost:8089/xxl-job-admin
     executor:
       appname: job-service
 #      address: 'http://localhost:8084'

@@ -56,6 +56,37 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>dockerfile-maven-plugin</artifactId>-->
+<!--                <version>1.4.0</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash; Dockerfile 实际路径：根目录 &ndash;&gt;-->
+<!--                    <dockerDirectory>.</dockerDirectory>-->
+<!--                    &lt;!&ndash; 镜像名称（自定义，建议包含项目名） &ndash;&gt;-->
+<!--                    <imageName>seckill-app</imageName>-->
+<!--                    &lt;!&ndash; 镜像标签（可关联 Git 或版本号，这里用 latest 简化） &ndash;&gt;-->
+<!--                    <tag>latest</tag>-->
+<!--                    &lt;!&ndash; 传递 Jar 包路径给 Dockerfile（多模块需指定子模块输出） &ndash;&gt;-->
+<!--                    <buildArgs>-->
+<!--                        &lt;!&ndash; 假设 job 模块是最终运行的服务，需根据实际调整 &ndash;&gt;-->
+<!--                        <JAR_FILE>job/target/job-*.jar</JAR_FILE>-->
+<!--                    </buildArgs>-->
+<!--                </configuration>-->
+<!--                &lt;!&ndash; 绑定到 package 阶段，执行 mvn package 时自动构建镜像 &ndash;&gt;-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>default</id>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>build</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+
+
         </plugins>
     </build>
 </project>
