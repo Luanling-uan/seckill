@@ -1,0 +1,3 @@
+com\sziit\job\JobApplication.class
+com\sziit\job\task\OrderTimeoutJob.class
+com\sziit\job\config\XxlJobConfig.class

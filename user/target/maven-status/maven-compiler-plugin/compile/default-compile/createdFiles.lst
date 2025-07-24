@@ -1,0 +1,4 @@
+com\sziit\user\entity\User.class
+com\sziit\user\service\UserService.class
+com\sziit\user\controller\UserController.class
+com\sziit\user\UserApplication.class

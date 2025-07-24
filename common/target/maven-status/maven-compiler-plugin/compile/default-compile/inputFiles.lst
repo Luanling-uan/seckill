@@ -1,0 +1,9 @@
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\CommonApplication.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\dto\OrderDTO.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\dto\OrderMessageDTO.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\dto\SeckillRequestDTO.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\dto\SeckillResultDTO.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\exception\GlobalExceptionHandler.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\feign\OrderFeignClient.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\feign\ProductFeignClient.java
+G:\WorkSpace\25暑假实训\实训实验\seckill\common\src\main\java\com\sziit\common\feign\ProductFeignClientFallback.java

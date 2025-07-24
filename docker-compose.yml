@@ -1,0 +1,61 @@
+version: '3.8'
+services:
+  nacos:
+    image: nacos/nacos-server:v2.2.3
+    environment:
+      - MODE=standalone
+    ports:
+      - "8848:8848"
+
+  redis:
+    image: redis:7.0
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3.11-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+
+  xxl-job-admin:
+    image: xuxueli/xxl-job-admin:2.4.0
+    environment:
+      - PARAMS=--spring.datasource.url=jdbc:mysql://host.docker.internal:3306/xxl_job?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC --spring.datasource.username=root --spring.datasource.password=2307240503 --spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+      - XXL_JOB_LOGIN_USERNAME=admin
+      - XXL_JOB_LOGIN_PASSWORD=123456
+    ports:
+      - "8080:8080"
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "8085:8085"
+    depends_on:
+      - nacos
+
+  user:
+    build: ./user
+    depends_on:
+      - nacos
+
+  product:
+    build: ./product
+    depends_on:
+      - nacos
+      - redis
+
+  order:
+    build: ./order
+    depends_on:
+      - nacos
+      - rabbitmq
+
+  job:
+    build: ./job
+    depends_on:
+      - nacos
+      - xxl-job-admin

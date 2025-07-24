@@ -1,0 +1,9 @@
+com\sziit\common\feign\ProductFeignClient.class
+com\sziit\common\dto\SeckillRequestDTO.class
+com\sziit\common\dto\OrderMessageDTO.class
+com\sziit\common\dto\SeckillResultDTO.class
+com\sziit\common\dto\OrderDTO.class
+com\sziit\common\feign\ProductFeignClientFallback.class
+com\sziit\common\exception\GlobalExceptionHandler.class
+com\sziit\common\feign\OrderFeignClient.class
+com\sziit\common\CommonApplication.class

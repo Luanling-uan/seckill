@@ -1,0 +1,8 @@
+com\sziit\product\ProductApplication.class
+com\sziit\product\repository\ProductRepository.class
+com\sziit\product\service\impl\ProductServiceImpl.class
+com\sziit\product\config\RedisConfig.class
+com\sziit\product\entity\Product.class
+com\sziit\product\config\RabbitMQConfig.class
+com\sziit\product\controller\ProductController.class
+com\sziit\product\service\ProductService.class
